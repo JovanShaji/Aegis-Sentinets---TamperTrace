@@ -103,6 +103,7 @@ When a sealed enclosure is cracked open, the rapid equalization between internal
 </p>
 
 ### Videos
+*Live Demo* - https://github.com/user-attachments/assets/fdde133c-9d91-4e8b-a44a-dcca97ff1152
 
 <video controls width="100%">
   <source src="/tampertrace-demo.mp4" type="video/mp4">
