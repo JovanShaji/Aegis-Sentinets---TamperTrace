@@ -89,7 +89,7 @@ When a sealed enclosure is cracked open, the rapid equalization between internal
 
 <p align="center">
   <img src="/assets/images/tampertrace/myosa.jpg" width="800"><br/>
-  <i>TamperTrace main unit inside sealed gasket enclosure with ESP32, BMP180, MPU6050, APDS9960, SSD1306 display, and DS1307 RTC</i>
+  <i>TamperTrace main unit with ESP32, BMP180, MPU6050, APDS9960, SSD1306 display, and DS1307 RTC</i>
 </p>
 
 <p align="center">
@@ -99,7 +99,7 @@ When a sealed enclosure is cracked open, the rapid equalization between internal
 
 <p align="center">
   <img src="/assets/images/tampertrace/kit.jpg" width="800"><br/>
-  <i>TamperTrace hardware kit components, sensor layout, and wiring configuration</i>
+  <i>TamperTrace hardware kit components and everyother used components</i>
 </p>
 
 ### Videos
