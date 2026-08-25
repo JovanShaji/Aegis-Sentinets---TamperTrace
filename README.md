@@ -2,7 +2,7 @@
 publishDate: 2026-08-25
 title: TamperTrace — Sealed-Enclosure Tamper Detection via Pressure–Light Correlation
 excerpt: ESP32-based sealed-enclosure tamper detection system combining sensor fusion (BMP180, MPU6050, APDS9960, DS1307) with an onboard INT8 TinyML autoencoder to detect covert breaches in complete darkness.
-image: /assets/images/TamperTrace/cover-image.jpg
+image: /assets/images/tampertrace/myosa.jpg
 tags:
   - ESP32
   - TinyML
@@ -88,13 +88,18 @@ When a sealed enclosure is cracked open, the rapid equalization between internal
 ### Images
 
 <p align="center">
-  <img src="/assets/images/TamperTrace/hardware-setup.jpg" width="800"><br/>
+  <img src="/assets/images/tampertrace/myosa.jpg" width="800"><br/>
   <i>TamperTrace main unit inside sealed gasket enclosure with ESP32, BMP180, MPU6050, APDS9960, SSD1306 display, and DS1307 RTC</i>
 </p>
 
 <p align="center">
-  <img src="/assets/images/TamperTrace/web-dashboard.jpg" width="800"><br/>
+  <img src="/assets/images/tampertrace/dashboard.jpg" width="800"><br/>
   <i>Authenticated embedded Web Dashboard serving real-time telemetry, autoencoder anomaly scores, and event history</i>
+</p>
+
+<p align="center">
+  <img src="/assets/images/tampertrace/kit.jpg" width="800"><br/>
+  <i>TamperTrace hardware kit components, sensor layout, and wiring configuration</i>
 </p>
 
 ### Videos
@@ -231,25 +236,12 @@ lib_deps =
 ## File Structure
 
 ```
-TamperTrace/
-├── platformio.ini              # PlatformIO project configuration & dependencies
-├── README.md                   # Repository overview
-└── src/
-    ├── config.h                # Pin definitions, addresses, thresholds, structures
-    ├── autoencoder_model.h     # INT8 Autoencoder weights & forward pass math
-    ├── sensor_manager.h        # Sensor manager class declaration
-    ├── sensor_manager.cpp      # BMP180, MPU6050, APDS9960 I2C drivers
-    ├── event_classifier.h      # Dual-EMA & fusion decision tree headers
-    ├── event_classifier.cpp    # Transient step filter & correlation logic
-    ├── data_logger.h           # SD card & DS1307 RTC class headers
-    ├── data_logger.cpp         # CSV logging & real-time clock synchronization
-    ├── display_manager.h       # SSD1306 OLED interface declarations
-    ├── display_manager.cpp     # OLED UI pages, alerts & commissioning bar
-    ├── alert_manager.h         # Buzzer & LED alert manager declarations
-    ├── alert_manager.cpp       # PWM audio tone patterns
-    ├── web_server_manager.h    # Web portal class declarations
-    ├── web_server_manager.cpp  # WiFi SoftAP, Web Server & JSON APIs
-    └── main.cpp                # Main entry point & 8 FreeRTOS tasks setup
+tampertrace/
+├── tampertrace.md              # Official MYOSA submission file
+├── myosa.jpg                   # Cover image & main enclosure hardware photo
+├── dashboard.jpg               # Embedded Web Dashboard screenshot
+├── kit.jpg                     # Hardware kit components and sensor layout
+└── tampertrace-demo.mp4        # Video demonstration
 ```
 
 ---
