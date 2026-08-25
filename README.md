@@ -236,12 +236,26 @@ lib_deps =
 ## File Structure
 
 ```
-tampertrace/
-├── tampertrace.md              # Official MYOSA submission file
-├── myosa.jpg                   # Cover image & main enclosure hardware photo
-├── dashboard.jpg               # Embedded Web Dashboard screenshot
-├── kit.jpg                     # Hardware kit components and sensor layout
-└── tampertrace-demo.mp4        # Video demonstration
+/TamperTrace
+  ├─ src/
+  │   ├─ main.cpp                 # FreeRTOS 8-task orchestration, setup, and loop
+  │   ├─ config.h                 # Pin definitions, I2C addresses, thresholds, and data structures
+  │   ├─ autoencoder_model.h      # Quantized 5-8-3-8-5 Edge AI neural network weights & inference
+  │   ├─ sensor_manager.h         # Sensor manager class declaration (BMP, APDS, IMU)
+  │   ├─ sensor_manager.cpp       # Mutex-protected non-blocking I2C sensor driver routines
+  │   ├─ event_classifier.h       # Event classifier class declaration (Dual-EMA & fusion)
+  │   ├─ event_classifier.cpp     # Dual-EMA transient filter, light history, and decision tree
+  │   ├─ data_logger.h            # Data logger class declaration (RTC & MicroSD)
+  │   ├─ data_logger.cpp          # Non-volatile CSV logging & DS1307 timestamp formatting
+  │   ├─ display_manager.h        # SSD1306 OLED display manager declaration
+  │   ├─ display_manager.cpp      # Splash screen, commissioning progress, and alert views
+  │   ├─ alert_manager.h          # Alert manager class declaration (Buzzer & LED)
+  │   ├─ alert_manager.cpp        # LEDC PWM tone patterns (continuous siren, dual-tone, chirps)
+  │   ├─ web_server_manager.h     # Embedded Web Server class declaration
+  │   ├─ web_server_manager.cpp   # SoftAP Web Server, glassmorphic UI, REST APIs & log terminal
+  │   └─ test_rtc.cpp             # Hardware diagnostic utility for DS1307 RTC validation
+  ├─ platformio.ini               # PlatformIO build environments, partition tables, & dependencies
+  └─ README.md                    # Master technical documentation
 ```
 
 ---
