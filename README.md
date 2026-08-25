@@ -1,10 +1,10 @@
 ---
 Publishing Date: 2026-08-25
 
-<span style="font-size: 30px;">**TamperTrace**</span>
+**TamperTrace**
 
-<span style="font-size: 22px;">**Sealed-Enclosure Tamper Detection via Pressure–Light Correlation
-excerpt: ESP32-based sealed-enclosure tamper detection system combining sensor fusion (BMP180, MPU6050, APDS9960, DS1307) with an onboard INT8 TinyML autoencoder to detect covert breaches in complete darkness.**</span>
+**Sealed-Enclosure Tamper Detection via Pressure–Light Correlation
+excerpt: ESP32-based sealed-enclosure tamper detection system combining sensor fusion (BMP180, MPU6050, APDS9960, DS1307) with an onboard INT8 TinyML autoencoder to detect covert breaches in complete darkness.**
 
 image: /assets/images/TamperTrace/cover-image.jpg
 tags:
