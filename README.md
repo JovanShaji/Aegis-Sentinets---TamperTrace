@@ -17,7 +17,7 @@ tags:
 
 ## Acknowledgements
 
-We express our sincere gratitude to **IEEE MYOSA 6.0 organizers** for providing the MYOSA hardware platform. Special thanks to our faculty mentor, **Prof. Fayisa M K** (Asst. Professor, Dept. of Computer Science & Engineering, Mar Athanasius College of Engineering / MBITS), for technical guidance in real-time system synchronization and sensor fusion architecture.
+We express our sincere gratitude to **IEEE MYOSA 6.0 organizers** for providing the MYOSA hardware platform. Special thanks to our faculty mentor, **Prof. Fayisa M K** (Asst. Professor, Dept. of Computer Science & Engineering, Mar Baselios Institute of Technology and Science / MBITS), for technical guidance in real-time system synchronization and sensor fusion architecture.
 
 ---
 
